@@ -22,7 +22,7 @@ $woocommerce = new Client(
 // DATA EXTERNAL 
 // API connection external
 // ===================
-$url_API="https://api.unsplash.com/photos/random?count=' + resultsPerPage + '&client_id=YqKE7-WAlZTH4EBiafdCxqRPpLGB6Sz9hCztDcgmAv4";
+$url_API="https://localhost:3000/api/v1/products";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
