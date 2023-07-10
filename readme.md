@@ -1,20 +1,20 @@
-Welcome, User!!
+# Welcome, User!!
 
-This is a project for Etraining. It is part of their technical test.
+## This is a project for Etraining. **It is part of their technical test.**
 
-By: David Barbosa
+### By: David Barbosa
 
-Steps to install the ecommerce-plugin project
+### Steps to install the ecommerce-plugin project
 
-Prerequisites:
-1. Xampp or Wampp
-2. PHP >= 8.0
+### Pre requisites:
+* Xampp or Wampp
+* PHP >= 8.0
 
-The installation
+### The installation
 For the installation of the project it is necessary to have a MySQL database management system, the Apache web server and the interpreters for PHP script languages.
 We will be using Xampp or Wampp for this and we also need to have the latest version of PHP to be able to run the version of Wordpress we are developing in.
 
-Let us begin:
+### Let us begin:
 
 1. Activate your Xampp or Wampp to activate your MySQL database management system, also activate the Apache server.
 
@@ -36,37 +36,32 @@ To view the files in a more user-friendly way, I suggest you open them with VSCo
 
 ========== ESPAÑOL ===================
 
-Bienvenido, ¡¡ USuario !!
+# Bienvenido, ¡¡ Usuario !!
 
-Este es un proyecto para Etraining. Forma parte de su prueba técnica.
+### Este es un proyecto para Etraining. **Forma parte de su prueba técnica.**
 
-Por: David Barbosa
+### Por: David Barbosa
 
-Pasos para instalar el proyecto ecommerce-plugin
+### Pasos para instalar el proyecto ecommerce-plugin
 
-Requisitos previos:
+### Requisitos previos:
 
-1. Xampp o Wampp
+* Xampp o Wampp
+* PHP >= 8.0
 
-2. PHP >= 8.0
-
-La instalación
+## La instalación
 
 Para la instalación del proyecto es necesario disponer de un sistema gestor de bases de datos MySQL, el servidor web Apache y los intérpretes para lenguajes de script PHP.
 
 Para ello utilizaremos Xampp o Wampp y también necesitamos tener la última versión de PHP para poder ejecutar la versión de Wordpress en la que estamos desarrollando.
 
-Comencemos:
+## Comencemos:
 
 
 1. Activa tu Xampp o Wampp para activar tu sistema gestor de base de datos MySQL, activa también el servidor Apache.
 
 
-2. Descomprime el archivo ZIP de Wordpress (el archivo contiene 1 archivo SQL y un archivo README que leerás ahora para continuar con la instalación) Es muy importante que descomprimas este archivo en la carpeta htdocs de tu Xampp o Wampp, si no el proyecto puede no funcionar correctamente, para saber donde está la carpeta "htdocs" entra en el explorador de archivos, ve a la zona "Este equipo", ahora entra en la carpeta Xampp o Wampp y luego entra en la carpeta "htdocs".
-
-He aquí un ejemplo de cómo se ve la ruta de la carpeta:
-
-C:\xampp htdocs.
+2. Descomprime el archivo ZIP de Wordpress (el archivo contiene 1 archivo SQL y un archivo README que leerás ahora para continuar con la instalación) Es muy importante que descomprimas este archivo en la carpeta htdocs de tu Xampp o Wampp, si no el proyecto puede no funcionar correctamente, para saber donde está la carpeta "htdocs" entra en el explorador de archivos, ve a la zona "Este equipo", ahora entra en la carpeta Xampp o Wampp y luego entra en la carpeta "htdocs". He aquí un ejemplo de cómo se ve la ruta de la carpeta:  C:\xampp htdocs.
 
 
 3. Una vez descomprimido el archivo ZIP, accede a: http://localhost/phpmyadmin/
