@@ -1,4 +1,4 @@
-$primaryColor: #ACD9B2;
+$primaryColor: #7B2A7F;
 $secundaryColor: #C7C7C7;
 $textColor: #C7C7C7;
 
@@ -75,12 +75,12 @@ img{
 
                 &:hover,
                 &.current {
-                    border: 1px solid #ACD9B2;
+                    border: 1px solid #2F2C7C;
                     box-sizing: border-box;
                     border-radius: 10px;
 
                     a {
-                        color: #ACD9B2;
+                        color: #2F2C7C;
                     }
                 }
             }
@@ -133,12 +133,12 @@ img{
 
                 &:hover,
                 &.current {
-                    border: 1px solid #ACD9B2;
+                    border: 1px solid #2F2C7C;
                     box-sizing: border-box;
                     border-radius: 10px;
 
                     a {
-                        color: #ACD9B2;
+                        color: #2F2C7C;
                     }
                 }
             }
@@ -166,7 +166,7 @@ img{
             line-height: 17px;
             text-align: right;
             text-decoration: none;
-            color: #ACD9B2;
+            color: #2F2C7C;
             margin-right: 10px;
 
             &:hover {
@@ -184,7 +184,7 @@ img{
                     content: "";
                     width: 10px;
                     height: 10px;
-                    background-color: #ACD9B2;
+                    background-color: #2F2C7C;
                     border-radius: 50%;
                     position: absolute;
                     top: 0;
@@ -296,7 +296,7 @@ a{
     img {
         width: 100%;
         height: auto;
-        border-radius: 40px;
+        border-radius: 10px;
         object-fit: contain;
         object-position: center;
     }
@@ -341,7 +341,7 @@ a{
 
     .productos__cart {
         .productos__add-to-cart {
-            background-color: #ACD9B2;
+            background-color: #2F2C7C;
             padding: 15px;
             border-radius: 50%;
             width: 40px;
@@ -466,7 +466,7 @@ a{
                     height: 55px;
                     display: inline-block;
                     text-decoration: none;
-                    color: #ACD9B2;
+                    color: #2F2C7C;
                     font-family: Quicksand;
                     font-style: normal;
                     font-weight: bold;

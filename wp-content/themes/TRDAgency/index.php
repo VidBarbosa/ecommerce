@@ -1,5 +1,12 @@
 <?php get_header() ?>
 
+<?php if(have_posts()){ ?>
+        <?php while(have_posts()){ the_post(); ?>
+            <?php the_content(); ?>
+        <?php } ?>
+<?php } ?>
+
+
 <div class="productos__container">
     <div class="productos__card">
         <figure>
@@ -8,7 +15,7 @@
         <div class="producto__caption">
             <div class="productos__desc">
                 <a class="producto__link" href="#">
-                    <h4 class="productos__titulo">Retro refrigerato</h4>
+                    <h4 class="productos__titulo">Retro refrigerator</h4>
                 </a>
             </div>
         </div>
