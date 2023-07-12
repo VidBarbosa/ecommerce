@@ -1,51 +1,36 @@
-<?php
-/**
- * The template for displaying header.
- *
- * @package HelloElementor
- */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
-$site_name = get_bloginfo( 'name' );
-$tagline   = get_bloginfo( 'description', 'display' );
-$header_nav_menu = wp_nav_menu( [
-	'theme_location' => 'menu-1',
-	'fallback_cb' => false,
-	'echo' => false,
-] );
-?>
-
-<header id="site-header" class="site-header" role="banner">
-
-	<div class="site-branding">
-		<?php
-		if ( has_custom_logo() ) {
-			the_custom_logo();
-		} elseif ( $site_name ) {
-			?>
-			<h1 class="site-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr__( 'Home', 'Hello TRD Agency' ); ?>" rel="home">
-					<?php echo esc_html( $site_name ); ?>
-				</a>
-			</h1>
-			<p class="site-description">
-				<?php
-				if ( $tagline ) {
-					echo esc_html( $tagline );
-				}
-				?>
-			</p>
-		<?php } ?>
-	</div>
-
-	<?php if ( $header_nav_menu ) : ?>
-		<nav class="site-navigation">
-			<?php
-			// PHPCS - escaped by WordPress with "wp_nav_menu"
-			echo $header_nav_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			?>
-		</nav>
-	<?php endif; ?>
+<header class="encabezado">
+    <div class="container-fluid gx-5 py-3">
+        <div class="row">
+            <div class="encabezado__hamburguesa col-2">
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/images/icon-menu.svg" alt="menu icon">
+                </a>
+            </div>
+            <div class="encabezado__logo col-5 col-md-2 px-2 px-md-4">
+                <?php the_custom_logo(); ?>
+            </div>
+            <div class="encabezado__menu col-6 col-md-4">
+                <?php wp_nav_menu(
+                        array(
+                            "menu" => 'menu-principal'
+                        )
+                    ); ?>
+            </div>
+            <div class="encabezado__cart col-5 col-md-2">
+                <a href="<?php echo home_url("sign-in");?>" class="encabezado_sign-in">
+                    <?php do_action("trd_signin"); ?>
+                </a>
+                <a href="#" class="encabezado__link active">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/header-empty-card.svg" alt="cart">
+                </a>
+            </div>
+        </div>
+        <div class="encabezado__menu-responsive">
+            <?php wp_nav_menu(
+                        array(
+                            "menu" => 'menu-responsive'
+                        )
+                    ); ?>
+        </div>
+    </div>
 </header>

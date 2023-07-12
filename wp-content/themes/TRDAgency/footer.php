@@ -2,7 +2,7 @@
     </main>
 
     <footer class="text-center my-4">
-        De TRD Agency con 💚 y moviendo las manitas 
+        <?php dynamic_sidebar('pie-pagina'); ?>
     </footer>
 <script src="assets/js/script.js"></script>
 <?php wp_footer(); ?>
